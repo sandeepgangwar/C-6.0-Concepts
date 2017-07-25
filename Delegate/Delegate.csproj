@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bookstore\Book.cs" />
+    <Compile Include="Bookstore\BookDb.cs" />
+    <Compile Include="Bookstore\BookProcessor.cs" />
+    <Compile Include="BookTestClient\PriceTotaler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
