@@ -1,6 +1,4 @@
 ﻿using Delegate.Bookstore;
-using Delegate.BookTestClient;
-using System;
 
 namespace Delegate
 {
@@ -19,12 +17,24 @@ namespace Delegate
             db.AddBook("C# v.30", "Shu", 15.34m, true);
             db.AddBook("C# v.40", "Lee", 17.34m, true);
 
-            System.Console.WriteLine("Printing title...");
-            db.ProcessPaperBack(new BookProcessor(PrintTitle));
-            Console.WriteLine("Printing total...");
-            PriceTotaler pt = new PriceTotaler();
-            db.ProcessPaperBack(new BookProcessor(pt.AddBookTotal));
-            Console.WriteLine($"Paperback book avg price:{pt.AveragePrice}");
+
+            //Normal approach
+
+            //Console.WriteLine("Printing title...");
+            //db.ProcessPaperBack(new BookProcessor(PrintTitle));
+            //Console.WriteLine("Printing total...");
+            //PriceTotaler pt = new PriceTotaler();
+            //db.ProcessPaperBack(new BookProcessor(pt.AddBookTotal));
+            //Console.WriteLine($"Paperback book avg price:{pt.AveragePrice}");
+
+            //Using the power of composition
+
+            //PriceTotaler pt = new PriceTotaler();
+            //BookProcessor bp = new BookProcessor(pt.AddBookTotal) + new BookProcessor(PrintTitle);
+            //db.ProcessPaperBack(bp);
+
+
+            //CompositeDelegateTestClient.Test();
 
         }
     }

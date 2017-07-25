@@ -47,6 +47,7 @@
     <Compile Include="Bookstore\BookDb.cs" />
     <Compile Include="Bookstore\BookProcessor.cs" />
     <Compile Include="BookTestClient\PriceTotaler.cs" />
+    <Compile Include="CompositeDelegateTest\CompositeDelegate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
