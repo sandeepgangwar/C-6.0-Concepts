@@ -8,7 +8,8 @@
             //AnyTest.Test();
             //DistinctTest.Test();
             //TakeTest.Test();
-            ZipTest.Test();
+            //ZipTest.Test();
+            SkipTest.Test();
         }
     }
 }
