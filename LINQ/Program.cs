@@ -9,7 +9,8 @@
             //DistinctTest.Test();
             //TakeTest.Test();
             //ZipTest.Test();
-            SkipTest.Test();
+            //SkipTest.Test();
+            JoinTest.Test();
         }
     }
 }
